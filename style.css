@@ -32,7 +32,12 @@ body, html {
 
 .TitlePage {
   text-align: center;
+  font-size: 1000px
   vertical-align: baseline;
+  background-color: salmon
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
 }
 
 #About {background-color: lightblue;}

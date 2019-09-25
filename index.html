@@ -1,153 +1,68 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html lang="en"><head>
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
-  <title>Thuyvi Nguyen&#39;s Home Page</title>
-  <style type="text/css" media="screen">
-	body
-	{
-	padding: 0;
-	margin: 0;
-  background-image: url(https://i.pinimg.com/originals/6f/8e/cf/6f8ecfe06ddba21c17c92a333141d980.jpg);
-	background-color: #557;
-	color: #000;
-	}
-
-	#contents
-	{
-	margin-top: 10px;
-	margin-bottom: 10px;
-	margin-left: 15%;
-	margin-right: 15%;
-	padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-	background-color: #FFF;
-	color: #000;
-	}
-
-	.code
-	{
-	color: #339;
-	background-color: transparent;
-	font-family: times, serif;
-	font-size: 0.9em;
-	padding-left: 40px;
-	}
-
-    ul li {
-    margin-top: 4px;
-    }
-</style>
-<script type="text/javascript" language="javascript">
-<!--
-// Email obfuscator script 2.1 by Tim Williams, University of Arizona
-// Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-// This code is freeware provided these four comment lines remain intact
-// A wizard to generate this code is at http://www.jottings.com/obfuscator/
-{ coded = "Xe6@XG8X6GqQKZTh.QqZ"
-  key = "IP2Otulq1pdk7gbvT0cLFnmsiAEzrfeKwX6y3HQCYhZMN45VGo8DSjBJWUaxR9"
-  shift=coded.length
-  email=""
-  for (i=0; i<coded.length; i++) {
-    if (key.indexOf(coded.charAt(i))==-1) {
-      ltr = coded.charAt(i)
-      email += (ltr)
-    }
-    else {
-      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-      email += (key.charAt(ltr))
-    }
-  }
-  link = "<a href='mailto:"+ email + "'>" + email + "</a>";
-}
-//-->
-</script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script>
-// From http://stackoverflow.com/questions/12302300/track-all-outbound-links-in-google-analytics
-// Outbound Link Tracking with Google Analytics
-// Requires jQuery 1.7 or higher (use .live if using a lower version)
-$(function() {
-    $("a").on('click',function(e){
-        var url = $(this).attr("href");
-        // Console logs shows the domain name of the link being clicked and the current window
-        // console.log('e.currentTarget.host: ' + e.currentTarget.host);
-        // console.log('window.location.host: ' + window.location.host);
-        // If the domains names are different, it assumes it is an external link
-        // Be careful with this if you use subdomains
-        if (e.currentTarget.host != window.location.host) {
-            // console.log('external link click');
-            // Outbound link! Fires the Google tracker code.
-            _gat._getTrackerByName()._trackEvent("Outbound Links", e.currentTarget.host, url, 0);
-            // Checks to see if the ctrl or command key is held down
-            // which could indicate the link is being opened in a new tab
-            if (e.metaKey || e.ctrlKey) {
-                // console.log('ctrl or meta key pressed');
-                var newtab = true;
-            }
-            // If it is not a new tab, we need to delay the loading
-            // of the new link for a just a second in order to give the
-            // Google track event time to fully fire
-            if (!newtab) {
-                // console.log('default prevented');
-                e.preventDefault();
-                // console.log('loading link after brief timeout');
-                setTimeout('document.location = "' + url + '"', 100);
-            }
-        }
-        /*
-        else {
-            console.log('internal link click');
-        }
-        */
-    });
-});
-</script>
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="myScript.js"></script>
 </head>
 <body>
-<div id="contents">
+
+<button class="tablink" onclick="openPage('About', this, 'lightblue')">About</button>
+<button class="tablink" onclick="openPage('Academic', this, 'lavender')" id="defaultOpen">Academic</button>
+<button class="tablink" onclick="openPage('Projects', this, 'darkseagreen')">Projects</button>
+<button class="tablink" onclick="openPage('Contact', this, 'sandybrown')">Contact</button>
+
+<div id="About" class="tabcontent">
+  <h2>About</h2>
+  <p> Hello! ****This website is a work in progress!**** I'm a recent UC Berkeley graduate with a degree in Cognitive Science. I'm interested in the brain, education, and technology!</p>
+  <img style="float:right" src="https://en.gravatar.com/userimage/169635224/5e849dc85e115edbdb936bcdba2ff606.png?size=200"/>
+  <h3> Interests </h3>
+  <ul>
+  <li><p> Climbing. I started bouldering this summer and I'm currently climbing V2-V3!</p></li>
+  <li><p> Music. </p></li>
+  <!--<li><p> Embroidery. I've embroidered a lot of things as gifts, but pictures of my favorite projects can be seen here.</p></li> -->
+  <li><p><a href="sustainability.html">Sustainability</a></p></li>
+  </li>
+  </ul>
+</div>
+
+<div id="Academic" class="tabcontent">
+  <h2>Academic</h2>
+  <h3> Things I've written </h3>
+  <ul>
+  <h4> Linguistics </h4>
+  <ul>
+  <li> <a href="https://drive.google.com/file/d/177P1ldN4y98-8oEBGj8hPU-hHb3MPsLg/view?usp=sharing">My paper</a> analyzing metaphor mappings in the Pixar movie Zootopia.</li>
+  </ul>
+  <h4> Music </h4>
+  <ul>
+  <li> <a href="https://drive.google.com/file/d/1yRyl2B8CC6oKosm-2kenxS1JdXiLw_BC/view?usp=sharing"> A short thing I wrote</a> about love and relationships in opera
+  </ul>
+  <ul>
+  <li> <a href="https://docs.google.com/document/d/1wwRPi4nKlgxIgmYdsOqz2TyKQDFBwVW8Z4cL_8TF40Y/view?usp=sharing">My informal research</a> on music cognition (mostly focused on music and emotions) (using my friends as my subjects)</li>
+  </ul>
+  <h4> Psychology </h4>
+  </ul>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <h2>Projects</h2>
+  <h3> Things I've made </h3>
+  <ul>
+  <li><a href="https://scratch.mit.edu/studios/25124894/"> Projects</a> I've made with my students on Scratch </li>
+  </ul>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h2>Contact</h2>
   <h2> Thuyvi Nguyen </h2>
+  <ul>
+  <li> <a href="https://github.com/vivsnguyen">Github</a></li>
+  <li> <a href="https://www.linkedin.com/in/thuyvi-nguyen/">LinkedIn</a></li>
+  <li><script type="text/javascript">document.write(link)</script> <noscript>My email: </noscript> <a href="vivipnguyen@gmail.com">vivipnguyen@gmail.com</a></li>
+  </ul>
+</div>
 
-<img style="float:right" src="https://en.gravatar.com/userimage/169635224/5e849dc85e115edbdb936bcdba2ff606.png?size=200"/>
-
-<h3> About </h3>
-<p> Hello! ****This website is a work in progress!**** I'm a recent UC Berkeley graduate with a degree in Cognitive Science. I'm interested in the brain, education, and technology!</p>
-
-<h3> Contact </h3>
-<ul>
-<li> <a href="https://github.com/vivsnguyen">Github</a></li>
-<li> <a href="https://www.linkedin.com/in/thuyvi-nguyen/">LinkedIn</a></li>
-<!--<li><script type="text/javascript">document.write(link)</script> <noscript>My email: (acronym for gnu debugger) at mit dot edu</noscript> (for the cryptographically inclined, my PGP public key ID is <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&amp;search=0x29AD1AE945D092BC">45D092BC</a>)</li> -->
-</ul>
-
-<h3> Interests </h3>
-<ul>
-<li><p> Climbing. I started bouldering this summer and I'm currently climbing V2-V3!</p></li>
-<li><p> Music. </p></li>
-<!--<li><p> Embroidery. I've embroidered a lot of things as gifts, but pictures of my favorite projects can be seen here.</p></li> -->
-<li><p><a href="sustainability.html">Sustainability</a></p></li>
-</li>
-</ul>
-
-<h3> Things I've written </h3>
-<ul>
-<h4> Linguistics </h4>
-<ul>
-<li> <a href="https://drive.google.com/file/d/177P1ldN4y98-8oEBGj8hPU-hHb3MPsLg/view?usp=sharing">My paper</a> analyzing metaphor mappings in the Pixar movie Zootopia.</li>
-</ul>
-<h4> Music </h4>
-<ul>
-<li> <a href="https://drive.google.com/file/d/1yRyl2B8CC6oKosm-2kenxS1JdXiLw_BC/view?usp=sharing"> A short thing I wrote</a> about love and relationships in opera
-</ul>
-<ul>
-<li> <a href="https://docs.google.com/document/d/1wwRPi4nKlgxIgmYdsOqz2TyKQDFBwVW8Z4cL_8TF40Y/view?usp=sharing">My informal research</a> on music cognition (mostly focused on music and emotions) (using my friends as my subjects)</li>
-</ul>
-<h4> Psychology </h4>
-</ul>
-
-<h3> Things I've made </h3>
-<ul>
-<li><a href="https://scratch.mit.edu/studios/25124894/"> Projects</a> I've made with my students on Scratch </li>
-</ul>
-</p> Page layout sourced from <a href=https://gregbrockman.com/>gdb.</a> Thanks, Greg!</p>
+<div id="TitlePage" class="TitlePage">
+<h1> Thuyvi Nguyen </h1>
+</body>

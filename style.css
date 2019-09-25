@@ -1,36 +1,41 @@
-body {
-  background-color: lightblue;
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Tahoma;
 }
 
-h1 {
-  color: white;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
+/* Style tab links */
+.tablink {
+  background-color: #555;
   color: black;
-  content: "/\00a0";
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 25%;
 }
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
+
+.tablink:hover {
+  background-color: #777;
 }
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
 }
+
+.TitlePage {
+  text-align: center;
+  vertical-align: baseline;
+}
+
+#About {background-color: lightblue;}
+#Academic {background-color: lavender;}
+#Projects {background-color: darkseagreen;}
+#Contact {background-color: sandybrown;}

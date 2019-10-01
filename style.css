@@ -5,6 +5,21 @@ body, html {
   font-family: Tahoma;
 }
 
+
+.bg {
+  /* The image used */
+  background-image: url("title.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 /* Style tab links */
 .tablink {
   background-color: #555;
@@ -35,7 +50,8 @@ body, html {
   vertical-align: baseline;
   background-color: salmon
   display: none;
-  padding: 100px 20px;
+  /* padding: 100px 20px; */
+  padding: 0px 0px;
   height: 100%;
 }
 

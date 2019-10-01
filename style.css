@@ -131,3 +131,28 @@ body, html {
   background-color: #555555;
   color: white;
 }
+
+/* Contact */
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+.fa-github {
+  background: black;
+  color: white;
+}
+.fa-linked-in-square {
+  background: blue;
+  color: white;
+}

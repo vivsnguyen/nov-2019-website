@@ -65,19 +65,6 @@ body, html {
 #Resume {background-color: darkkhaki;}
 #Contact {background-color: sandybrown;}
 
-/*Academic*/
-.bg-image {
-  /* Full height */
-  height: 50%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-  /* Images used */
-.img1 { background-image: url("berk.jpg"); }
-
 /* Buttons */
 .button {
   background-color: #4CAF50; /* Green */

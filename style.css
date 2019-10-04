@@ -5,7 +5,7 @@ body, html {
   font-family: Tahoma;
 }
 
-
+/* Academic */
 .bg {
   /* The image used */
   background-image: url("https://github.com/vivsnguyen/vivsnguyen.github.io/raw/master/title.png");
@@ -56,10 +56,27 @@ body, html {
 }
 
 #About {background-color: lightblue;}
-#Academic {background-color: lavender;}
+#Academic {
+  background-color: lavender;
+  background-image: url("berk.jpg");
+  background-size: cover;
+}
 #Projects {background-color: darkseagreen;}
 #Resume {background-color: darkkhaki;}
 #Contact {background-color: sandybrown;}
+
+/*Academic*/
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  /* Images used */
+.img1 { background-image: url("berk.jpg"); }
 
 /* Buttons */
 .button {

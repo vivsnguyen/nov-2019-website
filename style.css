@@ -152,11 +152,53 @@ body, html {
 }
 
 /* Set a specific color for each brand */
-.fa-github {
-  background: black;
+.fa-github-square {
+  background: none;
   color: white;
 }
-.fa-linked-in-square {
-  background: blue;
+.fa-linkedin-square {
+  background: none;
   color: white;
 }
+
+.fa-envelope-square {
+  background: none;
+  color: white;
+}
+
+/* circle link buttons */
+.media{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-53%, -50%);
+}
+
+/* Circles
+h2 #contact{
+  font-weight: lighter;
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+p #contact{
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-top: 0;
+}
+li #contact{
+  list-style: none;
+  margin: 10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  transition: .5s;
+}
+*/

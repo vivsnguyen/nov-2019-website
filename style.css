@@ -55,12 +55,15 @@ body, html {
   height: 100%;
 }
 
-#About {background-color: lightblue;}
+#About {background: linear-gradient(180deg, lightblue, rgb(204, 204, 255), #E9D4FF);}
+/*
 #Academic {
   background-color: lavender;
   background-image: url("berk.jpg");
   background-size: cover;
 }
+*/
+#Academic {background-color: lavender;}
 #Projects {background-color: darkseagreen;}
 #Resume {background-color: darkkhaki;}
 #Contact {background-color: sandybrown;}
@@ -141,7 +144,7 @@ body, html {
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 100px;
   text-align: center;
   text-decoration: none;
 }

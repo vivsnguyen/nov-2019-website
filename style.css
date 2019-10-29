@@ -5,6 +5,43 @@ body, html {
   font-family: Tahoma;
 }
 
+h2 {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+h3 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+h4 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+p {
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+li{
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 /* Academic */
 .bg {
   /* The image used */
@@ -143,7 +180,7 @@ body, html {
 /* Style all font awesome icons */
 .fa {
   padding: 20px;
-  font-size: 30px;
+  font-size: 50px;
   width: 100px;
   text-align: center;
   text-decoration: none;
@@ -176,6 +213,7 @@ body, html {
   left: 50%;
   transform: translate(-53%, -50%);
 }
+
 
 /* Circles
 h2 #contact{

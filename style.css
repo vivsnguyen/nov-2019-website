@@ -20,15 +20,6 @@ h4 {
   animation-name: slidein;
 }
 
-p {
-  animation-duration: 4s;
-  animation-name: slidein;
-}
-
-li{
-  animation-duration: 4s;
-  animation-name: slidein;
-}
 
 @keyframes slidein {
   from {
@@ -181,7 +172,7 @@ li{
 .fa {
   padding: 20px;
   font-size: 50px;
-  width: 100px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
 }
@@ -202,6 +193,11 @@ li{
 }
 
 .fa-envelope-square {
+  background: none;
+  color: white;
+}
+
+.fa-file-download {
   background: none;
   color: white;
 }

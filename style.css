@@ -5,6 +5,7 @@ body, html {
   font-family: Tahoma;
 }
 
+/*
 h2 {
   animation-duration: 2s;
   animation-name: slidein;
@@ -32,6 +33,7 @@ h4 {
     width: 100%;
   }
 }
+*/
 
 /* Academic */
 .bg {

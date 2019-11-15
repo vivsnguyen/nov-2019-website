@@ -1,173 +1,71 @@
-/* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Tahoma;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
 }
 
-/*
-h2 {
-  animation-duration: 2s;
-  animation-name: slidein;
-}
-
-h3 {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-h4 {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
-
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-*/
-
-/* Academic */
-.bg {
-  /* The image used */
-  background-image: url("https://github.com/vivsnguyen/vivsnguyen.github.io/raw/master/title.png");
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("lavender.jpg");
+  min-height: 100%;
 }
 
-
-/* Style tab links */
-.tablink {
-  background-color: #E9D4FF;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 20px;
-  width: 20%;
+.bgimg-2 {
+  background-image: url("bgimg2.jpg");
+  min-height: 400px;
 }
 
-.tablink:hover {
-  background-color: #777;
+.bgimg-3 {
+  background-image: url("bgimg3.jpg");
+  min-height: 400px;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: black;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+.bgimg-4 {
+  background-image: url("blue.jpg");
+  min-height: 100%;
 }
 
-.TitlePage {
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
   text-align: center;
-  vertical-align: baseline;
-  background-color: salmon
-  display: none;
-  /* padding: 100px 20px; */
-  padding: 0px 0px;
-  height: 100%;
+  color: #000;
 }
 
-#About {background: linear-gradient(180deg, lightblue, rgb(204, 204, 255), #E9D4FF);}
-/*
-#Academic {
-  background-color: lavender;
-  background-image: url("berk.jpg");
-  background-size: cover;
-}
-*/
-#Academic {background-color: lavender;}
-#Projects {background-color: darkseagreen;}
-#Resume {background-color: darkkhaki;}
-#Contact {background-color: sandybrown;}
-
-/* Buttons */
-.button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  height:150px;
-  width:400px;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  overflow: auto;
+.caption span.border {
+  background-color:none;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
 }
 
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
 }
 
-.button2 {
-  background-color: white;
-  color: black;
-  border: 2px solid #008CBA;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
-}
-
-.button3 {
-  background-color: white;
-  color: black;
-  border: 2px solid #f44336;
-}
-
-.button3:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-.button4 {
-  background-color: white;
-  color: black;
-  border: 2px solid #e7e7e7;
-}
-
-.button4:hover {background-color: #e7e7e7;}
-
-.button5 {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
-}
-
-.button5:hover {
-  background-color: #555555;
-  color: white;
-}
 
 /* Contact */
 /* Style all font awesome icons */
@@ -211,33 +109,3 @@ h4 {
   left: 50%;
   transform: translate(-53%, -50%);
 }
-
-
-/* Circles
-h2 #contact{
-  font-weight: lighter;
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  padding-top: 50px;
-  margin-bottom: 0;
-}
-p #contact{
-  color: #fff;
-  text-align: center;
-  font-weight: lighter;
-  font-size: 20px;
-  margin-top: 0;
-}
-li #contact{
-  list-style: none;
-  margin: 10px 30px;
-  display: inline-block;
-  font-size: 20px;
-  padding: 20px 20px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  transition: .5s;
-}
-*/
